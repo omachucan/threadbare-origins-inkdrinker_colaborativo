@@ -232,3 +232,12 @@ limit_left = 0
 limit_bottom = 1080
 position_smoothing_enabled = true
 script = ExtResource("13_0d2mj")
+
+[node name="Coin" parent="." unique_id=1005153957 instance=ExtResource("5_u7hr5")]
+position = Vector2(370, 600)
+
+[node name="Coin2" parent="." unique_id=24412678 instance=ExtResource("5_u7hr5")]
+position = Vector2(461, 491)
+
+[node name="Coin3" parent="." unique_id=843369374 instance=ExtResource("5_u7hr5")]
+position = Vector2(547, 400)

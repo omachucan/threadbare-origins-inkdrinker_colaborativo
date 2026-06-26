@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://jt80gv02u4f2"]
+[gd_scene format=3 uid="uid://jt80gv02u4f2"]
 
 [ext_resource type="Script" uid="uid://bi5370kgl6xcs" path="res://scripts/hud.gd" id="1_8msyy"]
 [ext_resource type="Texture2D" uid="uid://bwt5tfdwi6444" path="res://assets/input-prompts/keyboard_arrow_left.svg" id="2_btdwd"]
@@ -16,10 +16,10 @@ default_font_size = 64
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b8smf"]
 
-[node name="HUD" type="CanvasLayer"]
+[node name="HUD" type="CanvasLayer" unique_id=2047435491]
 script = ExtResource("1_8msyy")
 
-[node name="Start" type="VBoxContainer" parent="."]
+[node name="Start" type="VBoxContainer" parent="." unique_id=1898339832]
 unique_name_in_owner = true
 anchors_preset = 5
 anchor_left = 0.5
@@ -31,58 +31,58 @@ grow_horizontal = 2
 theme = SubResource("Theme_0yvta")
 theme_override_constants/separation = 32
 
-[node name="Label" type="Label" parent="Start"]
+[node name="Label" type="Label" parent="Start" unique_id=1332298540]
 layout_mode = 2
 text = "Controls"
 horizontal_alignment = 1
 
-[node name="GridContainer" type="GridContainer" parent="Start"]
+[node name="GridContainer" type="GridContainer" parent="Start" unique_id=225956059]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/h_separation = 24
 columns = 2
 
-[node name="PlayerOne" type="TabContainer" parent="Start/GridContainer"]
+[node name="PlayerOne" type="TabContainer" parent="Start/GridContainer" unique_id=864729480]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_b8smf")
 current_tab = 1
 tabs_visible = false
 
-[node name="PlayerOneJoypad" type="HBoxContainer" parent="Start/GridContainer/PlayerOne"]
+[node name="PlayerOneJoypad" type="HBoxContainer" parent="Start/GridContainer/PlayerOne" unique_id=670557231]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="Left" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneJoypad"]
+[node name="Left" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneJoypad" unique_id=821494516]
 layout_mode = 2
 texture = ExtResource("5_dwb6l")
 stretch_mode = 5
 
-[node name="Right" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneJoypad"]
+[node name="Right" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneJoypad" unique_id=99538019]
 layout_mode = 2
 texture = ExtResource("6_gl61p")
 stretch_mode = 5
 
-[node name="PlayerOneKeyboard" type="HBoxContainer" parent="Start/GridContainer/PlayerOne"]
+[node name="PlayerOneKeyboard" type="HBoxContainer" parent="Start/GridContainer/PlayerOne" unique_id=494630461]
 unique_name_in_owner = true
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="Left" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneKeyboard"]
+[node name="Left" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneKeyboard" unique_id=1239724629]
 layout_mode = 2
 texture = ExtResource("2_btdwd")
 stretch_mode = 5
 
-[node name="Right" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneKeyboard"]
+[node name="Right" type="TextureRect" parent="Start/GridContainer/PlayerOne/PlayerOneKeyboard" unique_id=840052944]
 layout_mode = 2
 texture = ExtResource("4_pk5l0")
 stretch_mode = 5
 
-[node name="Label2" type="Label" parent="Start"]
+[node name="Label2" type="Label" parent="Start" unique_id=930775352]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Press any key to start.
+text = "Presiona una tecla para continuar
 
 Help the InkDrinker
 reach Threadbare and
@@ -90,7 +90,7 @@ collect the stories
 on the way up."
 horizontal_alignment = 1
 
-[node name="WinEnding" type="Label" parent="."]
+[node name="WinEnding" type="Label" parent="." unique_id=1223248520]
 unique_name_in_owner = true
 visible = false
 top_level = true
@@ -110,7 +110,7 @@ theme_override_font_sizes/font_size = 64
 text = "You Win!"
 horizontal_alignment = 1
 
-[node name="LoseEnding" type="Label" parent="."]
+[node name="LoseEnding" type="Label" parent="." unique_id=38676282]
 unique_name_in_owner = true
 visible = false
 top_level = true
@@ -130,7 +130,7 @@ theme_override_font_sizes/font_size = 64
 text = "You Lose!"
 horizontal_alignment = 1
 
-[node name="CollectedCoins" type="Label" parent="."]
+[node name="CollectedCoins" type="Label" parent="." unique_id=880462504]
 unique_name_in_owner = true
 offset_left = 64.0
 offset_top = 126.0
@@ -139,7 +139,7 @@ offset_bottom = 214.0
 theme_override_font_sizes/font_size = 64
 text = "Books: 0"
 
-[node name="TimeLeft" type="Label" parent="."]
+[node name="TimeLeft" type="Label" parent="." unique_id=2059266870]
 unique_name_in_owner = true
 visible = false
 offset_left = 64.0
@@ -149,7 +149,7 @@ offset_bottom = 128.0
 theme_override_font_sizes/font_size = 64
 text = "0"
 
-[node name="Lives" type="TextureRect" parent="."]
+[node name="Lives" type="TextureRect" parent="." unique_id=1025915159]
 unique_name_in_owner = true
 offset_left = 60.0
 offset_top = 220.0
@@ -159,7 +159,7 @@ texture = ExtResource("2_yyptq")
 expand_mode = 1
 stretch_mode = 1
 
-[node name="MovePlayerLeft" type="TouchScreenButton" parent="."]
+[node name="MovePlayerLeft" type="TouchScreenButton" parent="." unique_id=1390754049]
 modulate = Color(1, 1, 1, 0.74902)
 texture_filter = 1
 position = Vector2(80, 845)
@@ -170,7 +170,7 @@ passby_press = true
 action = "player_1_left"
 visibility_mode = 1
 
-[node name="MovePlayerRight" type="TouchScreenButton" parent="."]
+[node name="MovePlayerRight" type="TouchScreenButton" parent="." unique_id=2050850990]
 modulate = Color(1, 1, 1, 0.74902)
 texture_filter = 1
 position = Vector2(400, 845)
